@@ -2,7 +2,7 @@
 Keep Monolith Backend [working name]
 
 # Status
-[proposed,~~ accepted, superseeded ~~]
+[proposed, ~~accepted, superseeded~~]
 
 # Context
 Monolith is the original application developed to support SysOps.  It contains all operational info (Customer, Billing info, customer's support plan,  Expert and their skillset, KB)  
