@@ -7,19 +7,22 @@ Keep Monolith Backend [working name]
 # Context
 Monolith is the original application developed to support SysOps.  It contains all operational info (Customer, Billing info, customer's support plan,  Expert and their skillset, KB)  
 
-However, there are reliability issues when there are spike in usgaes and the number of customers using the system.  There are 4 classes of users.  They are (in descending numbers):
+However, there are reliability & elasticity issues due to spike in usgaes and the number of customers using the system.  We believe the monolith was built to a specific capability which was exceed during the spike conditions.
+
+ We see there are 4 main classes of users.  They are (in descending order of numbers):
 1. customers
 2. experts
 3. administrators
 4. managers 
 
-Customers and Experts are affected when reliability issues occured because their numbers is more than administrator and managers.
+Customers and Experts are affected when there are spikes  because their numbers is more than administrator and managers.
 
 # Decision
-- Administrators and Managers will continue to use the Monolith for their operational work.
-- Monolith will continue to be the central store for all info for SysOps to meet reporting needs.
-- To relieve monolith from spike in usage, additional component (outside monolith) will be added to serve Customers and Experts.
+- Monolith will continue to be the central store for all info for SysOps to continue meeting operational needs beyond ticketing issues.
+- New component to be built to address and solve the elasticity and reliability issues.  This component must be scalable and elastic to meet sudden spike in usage, hence will be built outside the monolith.
 
 # Consequences
-- duplicate info of ticket info
+- Administrators and Managers will continue to use the Monolith for their operational work.
+- Further investigation and decision on the technology choice for the new component.  Current suggestion is the component will be using microservices style and cloud-native to take advantage of elasticity and scability.
+
 
