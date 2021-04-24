@@ -1,14 +1,14 @@
-#Title
+# Title
 [short noun phrase]
 
-#Status
+# Status
 [proposed, accepted, superseeded]
 
-#Context
+# Context
 [forces at play]
 
-#Decision
+# Decision
 [responses to forces]
 
-#Consequences
+# Consequences
 [context after decision is applied]
