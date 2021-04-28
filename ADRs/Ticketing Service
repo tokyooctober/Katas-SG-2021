@@ -12,13 +12,12 @@ We need to accept tickets and response back success to customer
 
 ## Decision
 
-We will use Architecture Decision Records, as [described by Michael Nygard](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions).
-
+We will write to No SQL DB, so that we can handle the large number of request.
 ## Consequences
 
 See Michael Nygard's article, linked above. For a lightweight ADR toolset, see Nat Pryce's [adr-tools](https://github.com/npryce/adr-tools).
 
-**Positive:** If any
+**Positive:**  Solves the problem related to spike in request.
 
 **Negative:** If any
 
