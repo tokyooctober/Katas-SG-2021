@@ -8,16 +8,21 @@ Proposed
 
 ## Context
 
-We need to accept tickets and response back success to customer
+1. We need to accept tickets and response back success to customer. L
+2.  lost tickets
+
 
 ## Decision
 
-We will write to No SQL DB, so that we can handle the large number of request.
+1. We will write to No SQL DB, so that we can handle the large number of request. 
+2. Add Queue. Push the ticket to queue 
+3. Load balancing
 ## Consequences
 
 See Michael Nygard's article, linked above. For a lightweight ADR toolset, see Nat Pryce's [adr-tools](https://github.com/npryce/adr-tools).
 
 **Positive:**  Solves the problem related to spike in request.
+All tickets are captured in queue
 
 **Negative:** If any
 
